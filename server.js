@@ -15,12 +15,15 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4: Routing code
-app.get("/hello", function(req, res ) {
-    res.end("<h1>HELLO WORLD</>");
+app.post("/create-item", (req, res) => {
+console.log(req.body);
+res.json ({test: "succes"});
 });
-app.get("/gift", function(req, res ) {
-    res.end("<h1>Siz sovgalar sahifasidasiz</>");
+
+app.get("/", function(req, res ) {
+    res.render("harid");
 });
+
 
 const server = http.createServer(app);
 let PORT = 3000;
