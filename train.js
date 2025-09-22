@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari");
+/* console.log("Jack Ma maslahatlari");
 const list = [ 
 "yaxshi talaba boling",  // 20
 "togri boshliq tanlang va koproq hato qiling", // 20-30
@@ -28,7 +28,7 @@ maslahatBering(70, (err, data) =>{
     console.log("javob:", data)
     }
 });
-console.log("passed here 1")
+console.log("passed here 1") */
 
 
 
@@ -67,3 +67,19 @@ async function run () {
     console.log(javob);      
 }
 run(); */
+
+function countLetter(letter, word) {
+    let count = 0;
+    if (word[0] === letter) count = count + 1;
+    if (word[1] === letter) count = count + 1;
+    if (word[2] === letter) count = count + 1;
+    if (word[3] === letter) count = count + 1;
+    if (word[4] === letter) count = count + 1;
+    // bu yerda soz uzunligiga qarab indexlarni kopaytirishimizga togri keladi
+
+    return count;
+}
+
+console.log(countLetter("p", "apple"));
+
+
