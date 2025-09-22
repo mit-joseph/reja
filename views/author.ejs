@@ -1,1 +1,254 @@
-<h2>hello world</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/main.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1-1">
+                        <img src="images/profile.png" 
+                        width="156px"
+                        height="142px"
+                        alt=""
+                        />
+                    </div>
+                    <div class="left_1-2"><%= user.name%></div>
+                    <div class="left_1-3"><%= user.profession%></div>
+                    <div class="left_icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Facebook.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Instagram.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Twitter.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Linkeding.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Youtube.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Facebook.svg" class="icon-1">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                                               <!-- LEFT-2 -->
+                <div class="left_2">
+                    <div class="left_2-1">
+                        <div class="label">Age:</div>                       
+                        <div class="value"><%= user.age%></div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="label">Residence:</div>                       
+                        <div class="value"><%= user.residence%></div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="label">Freelance:</div>                       
+                        <div class="value" style="color: green;">Available</div>
+                    </div>
+                    <div class="left_2-1">
+                        <div class="label">Adress:</div>                       
+                        <div class="value"><%= user.adress%></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                                               <!-- LEFT_3 -->
+                <div class="left_3">
+                    <div class="umumiy">Languages</div>
+                    <div class="left_3-1">                        
+                        <div>Uzbek</div>                       
+                        <div>100%</div>
+                        <div><img src="icon/Line1.svg" class="basic"></div>
+                    </div>
+                    <div class="left_3-1">
+                        <div>English</div>                       
+                        <div>80%</div>
+                        <div><img src="icon/Line2.svg" class="basic"></div>
+                    </div>
+                    <div class="left_3-1">
+                        <div>Korean</div>                       
+                        <div>60%</div>
+                        <div><img src="icon/Line3.svg" class="basic"></div>
+                    </div>                
+                </div>
+                <div class="marginer"></div>
+                                                 <!-- LEFT_4 -->
+                <div class="left_4">
+                    <div class="umumiy">Skills</div>
+                    <div class="left_4-1">                        
+                        <div>Html</div>                       
+                        <div>90%</div>
+                        <div><img src="icon/Line11.svg" class="basic"></div>
+                    </div>
+                    <div class="left_4-1">
+                        <div>CSS</div>                       
+                        <div>85%</div>
+                        <div><img src="icon/Line12.svg" class="basic"></div>
+                    </div>
+                    <div class="left_4-1">
+                        <div>Js</div>                       
+                        <div>80%</div>
+                        <div><img src="icon/Line13.svg" class="basic"></div>
+                    </div>
+                    <div class="left_4-1">
+                        <div>NodeJS</div>                       
+                        <div>75%</div>
+                        <div><img src="icon/Line14.svg" class="basic"></div>
+                    </div>
+                    <div class="left_4-1">
+                        <div>Python</div>                       
+                        <div>85%</div>
+                        <div><img src="icon/Line15.svg" class="basic"></div>
+                    </div>                        
+                </div>
+                <div class="marginer"></div>
+                                                 <!-- LEFT_5 -->
+                <div class="left_5">
+                    <div class="umumiy">Extra Skills</div>
+                    <div class="left_5-1">
+                        <div class="basic space"><img src="icon/icons.svg" ></div>
+                        <div class="basic">Bootstrap, Materialize </div>
+                    </div>
+                    <div class="left_5-1">
+                        <div class="basic space"><img src="icon/icons.svg"></div>
+                        <div class="basic">Styling, Sass </div>
+                    </div>
+                    <div class="left_5-1">
+                        <div class="basic space"><img src="icon/icons.svg"></div>
+                        <div class="basic">Django, Flask </div>
+                    </div>
+                    <div class="left_5-1">
+                        <div class="basic space"><img src="icon/icons.svg"></div>
+                        <div class="basic">GIT Knowledge </div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+            </div>
+                                                <!-- MID FRAME START -->
+            <div class="midd_frame">
+                <div class="mid_top">
+                    <div class="mid_top-1">
+                        <img src="icon/Ellipse.svg" class="ellipse1">
+                        <img src="icon/Ellipse4.svg" class="ellipse2">
+                        <img src="icon/Ellipse3.svg" class="ellipse3">
+                        <img src="icon/Rectangle1.svg" class="ellipse4">
+                        <img src="icon/Ellipse2.svg" class="ellipse5">
+                        <img src="icon/Rectangle2.svg" class="ellipse6">
+                        <img src="icon/Polygon1.svg" class="ellipse7">             
+                        <div class="mid_top-1-1">
+                            <h1 style="font-size: 48px;">
+                              Software Engineer at <%=user.work_place%>
+                            </h1>
+                              <p style="font-size: 20px;">
+                                <%=user.about_me%>
+                              </p>
+                        </div>
+                        <button class="butt">HIRE ME >>></button>
+                    </div>                
+                    <div class="mid_top-2">
+                        <div>
+                             <img src="images/image2.png" class="main_image">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mid_bottom">
+                    <div class="mid_bottom-1" >
+                        <h3 style="font-size: 32px;">My Servises</h3>
+                        <p style="margin-top: 12px;;"><%=user.service_desc%></p>
+                    </div>
+                    <div class="mid_bottom-2">
+                        <div class="services1">
+                            <div><img src="icon/coding1.svg"></div>
+                            <p class="services_basic">Wen Development</p>
+                            <p>Blog, E-Commerce</p>
+                        </div>
+                        <div class="services2">
+                            <div><img src="icon/coding2.svg"></div>
+                            <p class="services_basic">UI/UX Design</p>
+                            <p>Mobile App, website Design</p>
+                        </div>
+                        <div class="services3">
+                            <div><img src="icon/coding3.svg"></div>
+                            <p class="services_basic">Sound Design</p>
+                            <p>Voice Over, Beat Malking</p>
+                        </div>
+                        <div class="services4">
+                            <div><img src="icon/coding4.svg"></div>
+                            <p class="services_basic">Game Design</p>
+                            <p>Character Design, Props & Objects</p>
+                        </div>
+                        <div class="services5">
+                            <div><img src="icon/coding5.svg"></div>
+                            <p class="services_basic">Photography</p>
+                            <p>Portait, Product Photography</p>
+                        </div>
+                        <div class="services6">
+                            <p class="services_basic">Advertising</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.
+                            </p>
+                            <p class="order"> ORDER NOW   ></p>
+                           
+                        </div>                
+                                                                                                                                         
+                    </div>                
+                </div>
+            </div>
+                                          <!-- THE START OF RIGHT FRAME -->
+            <div class="right_frame">
+             <diV class="circle1">
+                <img src="icon/right1.svg ">            
+            </diV>
+             <diV class="circle2" >            
+                <img src="icon/right2.svg">        
+            </diV>
+             <diV class="circle3 radius_home"  >
+                <img src="icon/Home.svg" >        
+            </diV>
+             <diV class="circle4 radius">
+                <img src="icon/code.svg">
+            </diV>
+             <diV class="circle5 radius">
+                <img src="icon/cv.svg" >
+            </diV>
+             <diV class="circle6 radius">
+                <img src="icon/bag.svg" >
+            </diV>
+             <diV class="circle7 radius">
+                <img src="icon/Blog.svg" >
+             </diV>
+             <diV class="circle8 radius">
+                <img src="icon/Contact.svg">
+            </diV>                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
