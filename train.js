@@ -68,7 +68,7 @@ async function run () {
 }
 run(); */
 
-function countLetter(letter, word) {
+/* function countLetter(letter, word) {
     let count = 0;
     if (word[0] === letter) count = count + 1;
     if (word[1] === letter) count = count + 1;
@@ -80,6 +80,6 @@ function countLetter(letter, word) {
     return count;
 }
 
-console.log(countLetter("p", "apple"));
+console.log(countLetter("p", "apple")); */
 
 
