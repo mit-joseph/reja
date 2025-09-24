@@ -82,4 +82,15 @@ run(); */
 
 console.log(countLetter("p", "apple")); */
 
+function countDigits(word) {
+    let count = 0;
 
+    for (let n = 0; n < word.length; n++) {
+        if (word[n] >= "0" && word[n] <= "9") {
+            count ++;
+        }
+    }
+    return count;
+}
+
+console.log(countDigits("ad2a54y79wet0sfgb9csdf8cdf57cds1e8"));

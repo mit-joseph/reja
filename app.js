@@ -28,8 +28,19 @@ app.set("view engine", "ejs");
 
 //4: Routing code
 app.post("/create-item", (req, res) => {
+  console.log('user entered /create')
 console.log(req.body);
+const new_reja = req.body.reja;
 res.json ({test: "succes"});
+db.collection("plans").insertOne({reja: new_reja }, (err, data) =>{
+  if (err) { 
+    console.log(err);
+    res.end("something went wrong");
+    } else {
+      res.end("succesfully added");
+    }  
+});
+
 });
 
 app.get("/author", function(req, res ) {
@@ -37,7 +48,17 @@ app.get("/author", function(req, res ) {
 }); 
 
 app.get("/", function(req, res ) {
-    res.render("reja");
+  console.log('user entered /')
+  db.collection("plans").find().toArray ((err, data) => {
+    if(err){
+      console.log(err);
+      res.end(("something went wrong"));      
+    } else{
+      console.log(data);
+       res.render("reja", { items: data });
+    }
+  })
+   
 });
 
 module.exports = app;
