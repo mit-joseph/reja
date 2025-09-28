@@ -26,17 +26,12 @@ app.post("/create-item", (req, res) => {
     console.log(req.body);
     const new_reja = req.body.reja;
     db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end('something went wrong')
-        } else {
-            res.end('successfully addes ')
-        }
+     res.json(data.ops[0]);
     });
 });
 
 app.get("/hello", function(req, res) {
-    res.end(`<h1 style="background: yellowgreen">Hello World by Azamat</h1>`);
+    res.end();
 })
 console.log("A");
 app.get("/portfolio", (req, res) => {
