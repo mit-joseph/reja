@@ -8,7 +8,7 @@ function itemTemplate(item) {
              class="edit-me btn btn-secondary btn-sm">
              Ozgartirish
             </button>
-            <button
+            
             <button data-id="${item._id}"
             class="delete-me btn btn-danger btn-sm">
             Ochirish
@@ -34,4 +34,22 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
     console.log("Iltimos qaytadan harakat qiling")
   })
 
+});
+
+document.addEventListener("click", function (e) {
+    // delete oper
+    console.log(e.target);
+    if (e.target.classList.contains("delete-me")) {
+        if (confirm("Aniq ochirmoqchimisiz?")) {
+            axios
+                .post("/delete-item", { id: e.target.getAttribute("data-id") })
+                .then((respose) => {
+                    console.log(respose.data);
+                    e.target.parentElement.parentElement.remove();
+                })
+                .catch((err) => {
+                    console.log("Iltimos qaytadan harakat qiling!");
+                });
+        }
+    }
 });

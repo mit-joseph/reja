@@ -1,17 +1,21 @@
+
 console.log('Web Serverni Boshlash');
 const express = require('express');
 const app = express();
 const fs = require('fs');
 
 // Mongo DB choqirish
-const db = require('./server').db(); 
+const db = require('./server').db();
+const mongodb = require("mongodb")
+const { ObjectId } = require('mongodb');
+
 
 
 
 //1 Kirish/ MIDDLEWARE
 app.use(express.static('public')); // DP  public ochiqlaydi
 app.use(express.json()); // Midleware DP -> Rest API 
-app.use(express.urlencoded({ extended: true }));
+
 
 
 //2 Session
@@ -39,6 +43,17 @@ app.get("/portfolio", (req, res) => {
     res.render("portfolio", { user: user });
 });
 console.log("C");
+
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    db.collection("plans").deleteOne(
+        { _id: new mongodb.ObjectId(id) },
+        function (err, data) {
+            res.json({ state: "success" });
+        }
+    );
+});
+
 
 app.get("/", function(req, res) {
     console.log('user entered /');

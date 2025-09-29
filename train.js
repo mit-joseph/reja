@@ -82,7 +82,11 @@ run(); */
 
 console.log(countLetter("p", "apple")); */
 
-function countDigits(word) {
+
+
+// MIT TASK B
+
+/* function countDigits(word) {
     let count = 0;
 
     for (let n = 0; n < word.length; n++) {
@@ -93,4 +97,43 @@ function countDigits(word) {
     return count;
 }
 
-console.log(countDigits("ad2a54y79wet0sfgb9csdf8cdf57cds1e8"));
+console.log(countDigits("ad2a54y79wet0sfgb9csdf8cdf57cds1e8")); */
+
+
+// MIT TASK C
+
+class Shop {  
+  constructor(non, lagmon, cola){
+    this.non =  non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+  
+  // method
+   vaqt() {
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    return `${h}:${m}`;
+   }
+   qoldiq() {
+  console.log(`hozir ${this.vaqt()}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`);
+}
+  
+  sotish(nomi, soni) {
+    this[nomi] -= soni;
+  }
+
+  qabul(nomi, soni) {
+    this[nomi] += soni;
+  }
+  
+}
+
+const shop = new Shop (4, 5, 2);
+shop.qoldiq();
+shop.sotish('non', 3);
+shop.qoldiq()
+shop.qabul('cola', 5)
+shop.qoldiq()
+  
+  
