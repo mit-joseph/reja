@@ -102,7 +102,8 @@ console.log(countDigits("ad2a54y79wet0sfgb9csdf8cdf57cds1e8")); */
 
 // MIT TASK C
 
-class Shop {  
+
+/* class Shop {  
   constructor(non, lagmon, cola){
     this.non =  non;
     this.lagmon = lagmon;
@@ -134,6 +135,15 @@ shop.qoldiq();
 shop.sotish('non', 3);
 shop.qoldiq()
 shop.qabul('cola', 5)
-shop.qoldiq()
+shop.qoldiq() */
   
   
+// MIT TASK D
+
+function checkContent(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
+}
+// sort qilmasak agar ikkala string bir hil tartibda bolgandagina true qaytaradi holos
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("hello", "oleh"));        
+console.log(checkContent("true", "false")); 
