@@ -147,3 +147,6 @@ function checkContent(a, b) {
 console.log(checkContent("mitgroup", "gmtiprou"));
 console.log(checkContent("hello", "oleh"));        
 console.log(checkContent("true", "false")); 
+
+
+

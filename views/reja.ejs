@@ -15,28 +15,31 @@
     <h1 class="display-4 text-center mb-4">REJA VA MAQSADLAR</h1>
 
     <!-- Input Form -->
-    <div class="mx-auto shadow-sm bg-white rounded p-4 mb-4" style="max-width: 1000px;">
+    <div class="mx-auto shadow-sm bg-white rounded p-4 mb-4" style="height: 107px;" style="max-width: 1000px; ">
       <form id="create-form" action="/create-item" method="POST">
         <div class="d-flex gap-2">
           <input id="create-field" name="reja" type="text" class="form-control"
             placeholder="Yangi reja kiriting..." />
-          <button class="btn btn-primary px-4" style="border-radius: 8px;">
+          <button class="btn btn-primary px-4"  style="border-radius: 8px;">
             Yangi Reja Qoshish
           </button>
         </div>
       </form>
     </div>
-
+      
+    <!-- give a quesion -->
     <!-- Items List (no separation between items) -->
-    <ul id="item-list" class="list-group pb-5">
-      <% items.map(function(item) { %>
+    <ul id="item-list" class="list-group pb-5"> 
+      <% items.map(function(item) { %> 
         <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
-          <span class="item-text"><%= item.reja %></span>
+          <span class="item-text"><%= item.reja%></span>
           <div class="d-flex gap-2">
             <button data-id="<%= item._id %>" class="edit-me btn btn-secondary btn-sm">
               Ozgartirish
             </button>
-            <button class="delete-me btn btn-danger btn-sm">Ochirish</button>
+            <button  data-id="<%= item._id %>" class="delete-me btn btn-danger btn-sm">
+            Ochirish
+            </button>
           </div>
         </li>
       <% }) %>
@@ -49,9 +52,7 @@
       </button>
     </div>
   </div>
-
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="/browser.js"></script>
 </body>
-
 </html>
