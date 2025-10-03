@@ -31,7 +31,7 @@ maslahatBering(70, (err, data) =>{
 console.log("passed here 1") */
 
 
-
+// MIT TASK A
 
 /*
 //// ASYNC function
@@ -140,13 +140,22 @@ shop.qoldiq() */
   
 // MIT TASK D
 
-function checkContent(a, b) {
+/* function checkContent(a, b) {
   return a.split("").sort().join("") === b.split("").sort().join("");
 }
 // sort qilmasak agar ikkala string bir hil tartibda bolgandagina true qaytaradi holos
 console.log(checkContent("mitgroup", "gmtiprou"));
 console.log(checkContent("hello", "oleh"));        
-console.log(checkContent("true", "false")); 
+console.log(checkContent("true", "false"));  */
 
+
+// MIT TASK E
+
+function getReverse(a) {
+  return a.split("").reverse().join("");
+}
+
+
+console.log(getReverse("hello"));   // "olleh"
 
 
