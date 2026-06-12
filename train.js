@@ -159,3 +159,19 @@ function getReverse(a) {
 console.log(getReverse("hello"));   // "olleh"
 
 
+
+// docker build -t reja-app .                .- mean current directory - create image
+// docker run -d -p 4001:4000 reja-app       -create container from image, 4000 dan yurgan projectimizни 4001 portiga ulab beradi, -d - detached mode da ishlatish uchun
+ 
+// after creating repository in docker hub, we need to add tag to our image and push it to docker hub, then we can pull it from any machine and run it without building again.
+// docker tag reja-app mit32/reja-app        -add docker tag
+// docker login                              -login to docker hub
+// docker push mit32/reja-app                -add docker push
+
+// *****    UP QILISHDAN OLDIN DOCKER-COMPOSE.yml da portlarniham tekshirish kerak.  ******
+
+// docker-compose up -d                      -run docker compose in detached mode
+
+// docker pull mit32/reja-app                -add docker pull
+// docker-compose down                       -stop docker compose
+
